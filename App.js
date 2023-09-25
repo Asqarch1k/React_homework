@@ -1,14 +1,5 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-
-// const heading = (
-//   <div className="wrapper">
-//     {products.map(({ title, img, bio, stars }, idx) => (
-//       <h1>{salom}</h1>
-//     ))}
-//   </div>
-// );
-
 const products = [
   {
     img: "https://evergreenlandscapes.ca/wp-content/uploads/2018/06/grass.jpg.webp",
@@ -27,7 +18,6 @@ const products = [
     bio: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled",
   },
 ];
-
 const informPeople = [
   {
     imgs: "https://img.freepik.com/free-photo/positive-carefree-woman-with-curly-hair-dressed-hoodie-smiles-happily-makes-peace-gesture-takes-selfie-urban-place-being-good-mood-after-sport-training-people-emotions-sporty-lifestyle_273609-59906.jpg",
@@ -54,7 +44,6 @@ const informPeople = [
     start: "⭐⭐⭐⭐⭐⭐",
   },
 ];
-
 const heading = (
   <div className="wrapper">
     <div className="wrappers">
