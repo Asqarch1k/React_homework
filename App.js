@@ -1,49 +1,9 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-const products = [
-  {
-    img: "https://evergreenlandscapes.ca/wp-content/uploads/2018/06/grass.jpg.webp",
-    title: "Lorem Ipsum",
-    bio: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled",
-  },
+import Button from "./parsel/src/components/button";
+import Services from "./parsel/src/components/servicesCard";
+import Testymonya from "./parsel/src/components/testymoniyaCard.jsx";
 
-  {
-    img: "https://www.chicagobotanic.org/sites/default/files/images/lawn_care_summer.jpg",
-    title: "Lorem Ipsum",
-    bio: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled",
-  },
-  {
-    img: "https://img.freepik.com/free-photo/man-cutting-grass-with-lawn-mover-back-yard_1303-22794.jpg?w=2000",
-    title: "Lorem Ipsum",
-    bio: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled",
-  },
-];
-const informPeople = [
-  {
-    imgs: "https://img.freepik.com/free-photo/positive-carefree-woman-with-curly-hair-dressed-hoodie-smiles-happily-makes-peace-gesture-takes-selfie-urban-place-being-good-mood-after-sport-training-people-emotions-sporty-lifestyle_273609-59906.jpg",
-    name: "Courtney Henry",
-    bios: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book",
-    start: "⭐⭐⭐⭐⭐⭐",
-  },
-  {
-    imgs: "https://img.freepik.com/free-photo/positive-carefree-woman-with-curly-hair-dressed-hoodie-smiles-happily-makes-peace-gesture-takes-selfie-urban-place-being-good-mood-after-sport-training-people-emotions-sporty-lifestyle_273609-59906.jpg",
-    name: "Courtney Henry",
-    bios: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book",
-    start: "⭐⭐⭐⭐⭐⭐",
-  },
-  {
-    imgs: "https://img.freepik.com/free-photo/positive-carefree-woman-with-curly-hair-dressed-hoodie-smiles-happily-makes-peace-gesture-takes-selfie-urban-place-being-good-mood-after-sport-training-people-emotions-sporty-lifestyle_273609-59906.jpg",
-    name: "Courtney Henry",
-    bios: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book",
-    start: "⭐⭐⭐⭐⭐⭐",
-  },
-  {
-    imgs: "https://img.freepik.com/free-photo/positive-carefree-woman-with-curly-hair-dressed-hoodie-smiles-happily-makes-peace-gesture-takes-selfie-urban-place-being-good-mood-after-sport-training-people-emotions-sporty-lifestyle_273609-59906.jpg",
-    name: "Courtney Henry",
-    bios: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book",
-    start: "⭐⭐⭐⭐⭐⭐",
-  },
-];
 const heading = (
   <div className="wrapper">
     <div className="wrappers">
@@ -53,27 +13,17 @@ const heading = (
       <div className="transparentText">
         <p>Lorem Ipsum is simply dummy</p>
       </div>
+
       <h1 className="BolderTex">
         Lorem ipsum <br></br> Lorem
       </h1>
-      <button className="helpMeBtm">Help Me</button>
+      <Button btnTitle={"Help me"} />
     </div>
 
     <div className="mainTwo">
       <h1 className="ServicesText">Services</h1>
-
-      <div className="Boxes">
-        {products.map(({ title, img, bio }, idx) => (
-          <div className="boxs">
-            <div className="Images">
-              <img src={img} alt="" />
-            </div>
-            <h1 className="titleText">{title}</h1>
-            <p className="bioTex">{bio}</p>
-          </div>
-        ))}
-      </div>
-      <button className="helpMeBtm">Help Me</button>
+      <Services />
+      <Button btnTitle={"Help me"} />
       <h1 className="AboutUsTex">About Us</h1>
     </div>
 
@@ -115,19 +65,7 @@ const heading = (
 
     <div className="Services">
       <h1 className="ServicesText">Testymonials</h1>
-      <div className="Services1">
-        {informPeople.map(({ name, bios, start, imgs }, idx) => (
-          <div className="ServicesBox">
-            <img src={imgs} alt="" />
-
-            <div>
-              <h1 className="nameTExt">{name}</h1>
-              <p className="biosTExt">{bios}</p>
-              <p>{start}</p>
-            </div>
-          </div>
-        ))}
-      </div>
+      <Testymonya />
     </div>
 
     <div>

@@ -9,6 +9,8 @@
 .wrappers {
   background-image: url(./img/Rectangle\ 256.png);
   overflow: hidden;
+  background-size: cover;
+  padding-bottom: 40px;
 }
 
 .RoundText {
@@ -48,23 +50,15 @@
   font-weight: 900;
   line-height: 134.5px; /* 93.403% */
   margin-top: 17px;
+  margin-bottom: 17px;
 }
 
-.helpMeBtm {
-  width: 180px;
-  padding: 21px 53px;
-  border-radius: 35px;
-  background: radial-gradient(50% 50% at 50% 50%, #fff 0%, #f9f9f9 100%);
-  box-shadow: 0px 10px 50px 0px rgba(16, 51, 30, 0.5);
-  border: none;
-  color: #48924f;
-  cursor: pointer;
-  margin-left: 650px;
-  margin: 90px 650px;
-}
-
-.helpMeBtm:active {
-  transform: scale(0.9);
+.serviseSection {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 50px;
+  margin-bottom: 50px;
 }
 
 .Services1 {
@@ -104,6 +98,10 @@
   margin-top: 50px;
 }
 
+.boxess {
+  display: flex;
+}
+
 .titleText {
   padding: 30px 30px 10px 30px;
   color: #0d4d14;
@@ -123,6 +121,7 @@
   font-style: normal;
   font-weight: 800;
   line-height: normal;
+  margin-top: 50px;
   margin-bottom: 50px;
 }
 
@@ -148,7 +147,7 @@
 
 .ServicesBox {
   width: 577px;
-  height: 233px;
+  height: 283px;
   border-radius: 40px;
   border: 1px solid #6cb981;
   background: #fff;
@@ -205,4 +204,26 @@
   height: 145px;
   flex-shrink: 0;
   background: #324b29;
+}
+
+.btn {
+  width: 180px;
+  padding: 21px 60px;
+  border-radius: 35px;
+  background: radial-gradient(50% 50% at 50% 50%, #fff 0%, #f9f9f9 100%);
+  box-shadow: 0px 10px 50px 0px rgba(16, 51, 30, 0.5);
+  border: none;
+  color: #48924f;
+  cursor: pointer;
+  display: flex;
+}
+
+.btn:active {
+  transform: scale(0.9);
+}
+
+.testimonialSection {
+  display: grid;
+  grid-template-columns: repeat(2, 620px);
+  gap: 20px;
 }
